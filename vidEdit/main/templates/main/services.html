@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Услуги
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+    <img src="{% static 'img/services_photo1.jpg' %}" class="img-fluid" alt="Responsive image">
+<div class="container">
+    <h1 class="navbar-nav m-2" style="text-align: center">
+        Услуги
+    </h1>
+    <ul>
+      {% for service in object_list %}
+        <img src="{{ service.picture.url}}" alt="{{ service.title }}">
+        <p> {{service.title}} </p>
+      {% endfor %}
+    </ul>
+</div>
+{% endblock %}
