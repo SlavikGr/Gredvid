@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+   Портфолио
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+<div class="container_for_header">
+    <div class="overlay2"></div>
+    <img src="{% static 'img/portfolio2.jpg' %}" class="img-fluid" alt="Responsive image">
+     <div class="container h-100" style="position: relative;z-index: 2">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+              <h1 class="card-title" style="font-size: 50px; letter-spacing: 2px"><b>Портфолио</b></h1>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container">
+    <br><br>
+<div class="row">
+    {% for video in object_list %}
+    <div class="col-md-6">
+              <div class="embed-responsive embed-responsive-16by9 border-dark" style="border-radius: 7px">
+                <iframe class="embed-responsive-item"  src="{{ video.link }}" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <p class="text-center" style="font-size: 20px;"> <b>{{ video.title }}</b> </p>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

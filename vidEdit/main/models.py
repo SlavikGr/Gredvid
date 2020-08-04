@@ -11,3 +11,11 @@ class Service(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Portfolio(models.Model):
+    title = models.CharField(max_length=30)
+    link = models.TextField(default='Ссылка на видео')
+
+    def __str__(self):
+        return self.title

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from .models import Service
+from .models import Service, Portfolio
 
 
 class ServicesPage(ListView):
@@ -11,6 +11,11 @@ class ServicesPage(ListView):
 class OnlyService(DetailView):
     model = Service
     template_name = 'main/service.html'
+
+
+class Portfolio(ListView):
+    model = Portfolio
+    template_name = 'main/portfolio.html'
 
 
 def index(request):
