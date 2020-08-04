@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="606e4e81-c5de-4d28-a82a-0bf272272c21" name="Default Changelist" comment="" />
+    <list default="true" id="606e4e81-c5de-4d28-a82a-0bf272272c21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vidEdit/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/vidEdit/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vidEdit/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vidEdit/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vidEdit/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vidEdit/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vidEdit/main/templates/main/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/vidEdit/main/templates/main/services.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +23,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1fEKBf9sQsPjpUgTG4g1LzD8RJQ" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -53,10 +64,22 @@
       <workItem from="1596124386138" duration="130000" />
       <workItem from="1596465905633" duration="4456000" />
       <workItem from="1596485127180" duration="9172000" />
+      <workItem from="1596537232101" duration="6950000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
