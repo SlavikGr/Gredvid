@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    {{ service.title }}
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+<div class="container_for_header">
+    <div class="overlay2"></div>
+    <img src="{{ service.picture.url }}" class="img-fluid" alt="Responsive image">
+     <div class="container h-100" style="position: relative;z-index: 2">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+              <h1 class="card-title" style="font-size: 40px; letter-spacing: 2px"><b>{{ service.title }}</b></h1>
+              <p> {{ service.text }}</p>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container">
+    <br><br>
+    <div class="row">
+        <div class="col-md-7">
+            <p class="card-title" style="font-size: 18px"> <b>{{ service.body_title }}</b> </p>
+            <p class="card-text">{{ service.body|linebreaks }}</p>
+            <a> {{ service.link }} </a>
+          </div>
+            <div class="col-md-5 embed-responsive embed-responsive-16by9 border-dark" style="border-radius: 7px">
+                <iframe class="embed-responsive-item"  src="{{ service.link }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+    </div>
+</div>
+{% endblock %}
