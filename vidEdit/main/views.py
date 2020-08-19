@@ -13,13 +13,25 @@ class OnlyService(DetailView):
     template_name = 'main/service.html'
 
 
-class Portfolio(ListView):
+class PortfolioList(ListView):
     model = Portfolio
     template_name = 'main/portfolio.html'
 
 
+# def index(request):
+#     return render(request, 'main/index.html')
+
+
 def index(request):
-    return render(request, 'main/index.html')
+    services = Service.objects.all()
+    portfolio = Portfolio.objects.all()
+
+    response_data = {
+        'services': services,
+        'portfolio': portfolio,
+    }
+
+    return render(request, 'main/index.html', response_data)
 
 
 def about(request):
