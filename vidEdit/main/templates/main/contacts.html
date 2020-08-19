@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+   Контакты
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+<div class="container_for_header">
+    <div class="overlay2"></div>
+    <img src="{% static 'img/contacts.jpg' %}" class="img-fluid" alt="Responsive image">
+     <div class="container h-100" style="position: relative;z-index: 2">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+              <h1 class="card-title" style="font-size: 50px; letter-spacing: 2px"><b>Контакты</b></h1>
+          </div>
+        </div>
+      </div>
+</div>
+<br><br>
+<div class="container text-center">
+    <h1 class="text font-weight-bold"> Email: </h1>
+    <p style="font-size: 25px"> slavik.grazyk@gmail.com</p>
+    <h1 class="text font-weight-bold"> Phone: </h1>
+    <p style="font-size: 25px"> +380957692765</p>
+    <div class="container w-25">
+        <div class="row">
+            <div class="col-4"><a href="https://www.instagram.com/grazyk__/" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"/></a></div>
+            <div class="col-4"><a href="https://web.telegram.org/#/im?p=@grazuk" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/telegram-app.png"/></a></div>
+            <div class="col-4"><a href="https://www.facebook.com/profile.php?id=100007551105293" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook.png"/></a></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
