@@ -7,4 +7,5 @@ urlpatterns = [
     path('services', ServicesPage.as_view(), name='services'),
     path('services/<int:pk>/', OnlyService.as_view(), name='service'),
     path('portfolio', Portfolio.as_view(), name='portfolio'),
+    path('about-me', views.about, name='about'),
 ]

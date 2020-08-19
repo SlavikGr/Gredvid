@@ -1,0 +1,51 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+   Обо мне
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+<div class="container_for_header">
+    <div class="overlay2"></div>
+    <img src="{% static 'img/about_me.jpg' %}" class="img-fluid" alt="Responsive image">
+     <div class="container h-100" style="position: relative;z-index: 2">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+              <h1 class="card-title" style="font-size: 50px; letter-spacing: 2px"><b>Обо мне</b></h1>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container">
+    <br><br>
+<div class="row">
+    <div class="col-md-8">
+        <p class="text" style="font-size: 20px;">
+                  Я студент 4-го курса НТУУ КПИ им. Игоря Сикорского, специальность «Компьютерные науки».
+                  В 2017 году окончил школу с серебряной медалью. Всегда стремлюсь к большему, имею свою точку зрения,
+                  обдуманной критики не боюсь. Настойчивый, усидчивый и терпеливый.
+        </p>
+        <p class="text" style="font-size: 30px;">
+            <b> Умения и навыки  </b>
+        </p>
+        <ul class="text-body">
+            <li><p class="text" style="font-size: 20px;">Монтаж в Adobe Premiere Pro CC 2018; </p></li>
+            <li><p class="text" style="font-size: 20px;">Работа в Adobe Audition, Adobe After Effects, Adobe Photoshop, Adobe Flash; </p></li>
+            <li><p class="text" style="font-size: 20px;">Опыт работы в таких программах, как Sony Vegas Pro и Edius; </p></li>
+            <li><p class="text" style="font-size: 20px;">Базовые знания видеосъемки; </p></li>
+            <li><p class="text" style="font-size: 20px;">Опыт работы с большим объемом работы; </p></li>
+            <li><p class="text" style="font-size: 20px;">Базовые знания цветокоррекции; </p></li>
+            <li><p class="text" style="font-size: 20px;">Работа с хромакеем; </p></li>
+            <li><p class="text" style="font-size: 20px;">Английский язык - Intermediate; </p></li>
+        </ul>
+
+        </div>
+    <div class="col-md-4">
+        <img src="{% static 'img/photo_me.JPG' %}" class="img-thumbnail" alt="photo-me">
+    </div>
+    </div>
+</div>
+{% endblock %}
